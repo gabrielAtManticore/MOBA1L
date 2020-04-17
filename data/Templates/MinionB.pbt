@@ -7,7 +7,7 @@ Assets {
       RootId: 12967867852267520266
       Objects {
         Id: 12967867852267520266
-        Name: "MinionA"
+        Name: "MinionB"
         Transform {
           Scale {
             X: 1
@@ -242,11 +242,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 1
+            Int: 5
           }
           Overrides {
             Name: "cs:DamageToNPCs"
-            Float: 50
+            Float: 20
           }
           Overrides {
             Name: "cs:PlayerHomingTarget"
@@ -596,7 +596,6 @@ Assets {
         ChildIds: 1808420325362926985
         ChildIds: 17465210408781147764
         ChildIds: 3376886061775490385
-        ChildIds: 2376164737637892905
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -625,6 +624,7 @@ Assets {
         ParentId: 9253220844595929359
         ChildIds: 14553952187265908624
         ChildIds: 16181938623344365483
+        ChildIds: 2376164737637892905
         UnregisteredParameters {
           Overrides {
             Name: "cs:ObjectId"
@@ -1139,6 +1139,60 @@ Assets {
         }
       }
       Objects {
+        Id: 2376164737637892905
+        Name: "Ring"
+        Transform {
+          Location {
+            Z: 175
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.75
+            Y: 0.75
+            Z: 0.75
+          }
+        }
+        ParentId: 16783018995991628606
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5351428073291024820
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 30
+              G: 19.0000019
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 46061843978868412
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 1808420325362926985
         Name: "Engaging"
         Transform {
@@ -1156,6 +1210,7 @@ Assets {
         ParentId: 9253220844595929359
         ChildIds: 16388591426263179176
         ChildIds: 7168461025371486649
+        ChildIds: 4233865984179518818
         UnregisteredParameters {
           Overrides {
             Name: "cs:ObjectId"
@@ -1801,6 +1856,60 @@ Assets {
         }
       }
       Objects {
+        Id: 4233865984179518818
+        Name: "Ring"
+        Transform {
+          Location {
+            Z: 175
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.75
+            Y: 0.75
+            Z: 0.75
+          }
+        }
+        ParentId: 1808420325362926985
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5351428073291024820
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 30
+              G: 19.0000019
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 46061843978868412
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 17465210408781147764
         Name: "Attacking"
         Transform {
@@ -1818,6 +1927,7 @@ Assets {
         ParentId: 9253220844595929359
         ChildIds: 2485537567544271052
         ChildIds: 1137657101286218924
+        ChildIds: 16934585646461337811
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -3944,6 +4054,60 @@ Assets {
         }
       }
       Objects {
+        Id: 16934585646461337811
+        Name: "Ring"
+        Transform {
+          Location {
+            Z: 134.171555
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17465210408781147764
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5351428073291024820
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 30
+              G: 19.0000019
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 46061843978868412
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 3376886061775490385
         Name: "Dead"
         Transform {
@@ -4466,60 +4630,6 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 2376164737637892905
-        Name: "Ring"
-        Transform {
-          Location {
-            Z: 133.333344
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9253220844595929359
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5351428073291024820
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 30
-              G: 19.0000019
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 46061843978868412
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableCastShadows: true
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
     }
     Assets {
       Id: 1413196292823476264
@@ -4564,6 +4674,24 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_pipe_003"
+      }
+    }
+    Assets {
+      Id: 46061843978868412
+      Name: "Ring"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_torus_004"
+      }
+    }
+    Assets {
+      Id: 5351428073291024820
+      Name: "Opaque Emissive"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_opaque_emissive"
       }
     }
     Assets {
@@ -4672,24 +4800,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
-      Id: 46061843978868412
-      Name: "Ring"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_torus_004"
-      }
-    }
-    Assets {
-      Id: 5351428073291024820
-      Name: "Opaque Emissive"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxma_opaque_emissive"
       }
     }
     PrimaryAssetId {

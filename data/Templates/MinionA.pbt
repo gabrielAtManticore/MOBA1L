@@ -7,7 +7,7 @@ Assets {
       RootId: 13420344242969750217
       Objects {
         Id: 13420344242969750217
-        Name: "DevMinion"
+        Name: "MinionA"
         Transform {
           Scale {
             X: 1
@@ -242,11 +242,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 1
+            Int: 5
           }
           Overrides {
             Name: "cs:DamageToNPCs"
-            Float: 50
+            Float: 20
           }
           Overrides {
             Name: "cs:PlayerHomingTarget"
@@ -596,8 +596,6 @@ Assets {
         ChildIds: 211131947792773443
         ChildIds: 14687859017017945348
         ChildIds: 2488558249184648702
-        ChildIds: 15086199541445563437
-        ChildIds: 12290857953106400224
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -626,6 +624,8 @@ Assets {
         ParentId: 13655684992340290336
         ChildIds: 3597681722759900834
         ChildIds: 9763482084746014684
+        ChildIds: 10471564923723709135
+        ChildIds: 3764961223651984741
         UnregisteredParameters {
           Overrides {
             Name: "cs:ObjectId"
@@ -1140,6 +1140,116 @@ Assets {
         }
       }
       Objects {
+        Id: 10471564923723709135
+        Name: "Horn"
+        Transform {
+          Location {
+            Y: 50.0000038
+            Z: 127.040634
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -179.999954
+            Roll: -44.9999428
+          }
+          Scale {
+            X: 0.354559302
+            Y: 0.354559302
+            Z: 0.354559302
+          }
+        }
+        ParentId: 13286988412169048475
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10184847056121543272
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15388879858733687781
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3764961223651984741
+        Name: "Horn"
+        Transform {
+          Location {
+            Y: -50.0000038
+            Z: 127.040634
+          }
+          Rotation {
+            Roll: -44.9999924
+          }
+          Scale {
+            X: 0.354559302
+            Y: 0.354559302
+            Z: 0.354559302
+          }
+        }
+        ParentId: 13286988412169048475
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10184847056121543272
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15388879858733687781
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 211131947792773443
         Name: "Engaging"
         Transform {
@@ -1157,6 +1267,8 @@ Assets {
         ParentId: 13655684992340290336
         ChildIds: 6774425828185533135
         ChildIds: 67095755188257073
+        ChildIds: 16681649994337042240
+        ChildIds: 17587254830070131125
         UnregisteredParameters {
           Overrides {
             Name: "cs:ObjectId"
@@ -1802,6 +1914,116 @@ Assets {
         }
       }
       Objects {
+        Id: 16681649994337042240
+        Name: "Horn"
+        Transform {
+          Location {
+            Y: 50.0000038
+            Z: 127.040634
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -179.999954
+            Roll: -44.9999733
+          }
+          Scale {
+            X: 0.354559302
+            Y: 0.354559302
+            Z: 0.354559302
+          }
+        }
+        ParentId: 211131947792773443
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10184847056121543272
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15388879858733687781
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17587254830070131125
+        Name: "Horn"
+        Transform {
+          Location {
+            Y: -50.0000038
+            Z: 127.040634
+          }
+          Rotation {
+            Roll: -44.9999924
+          }
+          Scale {
+            X: 0.354559302
+            Y: 0.354559302
+            Z: 0.354559302
+          }
+        }
+        ParentId: 211131947792773443
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10184847056121543272
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15388879858733687781
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 14687859017017945348
         Name: "Attacking"
         Transform {
@@ -1819,6 +2041,8 @@ Assets {
         ParentId: 13655684992340290336
         ChildIds: 16760610487044415705
         ChildIds: 17369029463245585138
+        ChildIds: 15086199541445563437
+        ChildIds: 12290857953106400224
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -3945,6 +4169,116 @@ Assets {
         }
       }
       Objects {
+        Id: 15086199541445563437
+        Name: "Horn"
+        Transform {
+          Location {
+            Y: -66.6666718
+            Z: 70.2257309
+          }
+          Rotation {
+            Roll: -44.9999962
+          }
+          Scale {
+            X: 0.472745746
+            Y: 0.472745746
+            Z: 0.472745746
+          }
+        }
+        ParentId: 14687859017017945348
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10184847056121543272
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15388879858733687781
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12290857953106400224
+        Name: "Horn"
+        Transform {
+          Location {
+            Y: 66.6666718
+            Z: 70.2257309
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: -179.999954
+            Roll: -44.9999924
+          }
+          Scale {
+            X: 0.472745746
+            Y: 0.472745746
+            Z: 0.472745746
+          }
+        }
+        ParentId: 14687859017017945348
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10184847056121543272
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.97
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15388879858733687781
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 2488558249184648702
         Name: "Dead"
         Transform {
@@ -4467,116 +4801,6 @@ Assets {
           }
         }
       }
-      Objects {
-        Id: 15086199541445563437
-        Name: "Horn"
-        Transform {
-          Location {
-            Y: -66.6666718
-            Z: 69.3875122
-          }
-          Rotation {
-            Roll: -45
-          }
-          Scale {
-            X: 0.472745746
-            Y: 0.472745746
-            Z: 0.472745746
-          }
-        }
-        ParentId: 13655684992340290336
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10184847056121543272
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.97
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 15388879858733687781
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12290857953106400224
-        Name: "Horn"
-        Transform {
-          Location {
-            Y: 66.6666641
-            Z: 69.3875122
-          }
-          Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -179.999954
-            Roll: -45
-          }
-          Scale {
-            X: 0.472745746
-            Y: 0.472745746
-            Z: 0.472745746
-          }
-        }
-        ParentId: 13655684992340290336
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 10184847056121543272
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.97
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 15388879858733687781
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
     }
     Assets {
       Id: 1413196292823476264
@@ -4621,6 +4845,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_pipe_003"
+      }
+    }
+    Assets {
+      Id: 15388879858733687781
+      Name: "Horn"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_horn_001"
       }
     }
     Assets {
@@ -4729,15 +4962,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cube_002"
-      }
-    }
-    Assets {
-      Id: 15388879858733687781
-      Name: "Horn"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_horn_001"
       }
     }
     PrimaryAssetId {
