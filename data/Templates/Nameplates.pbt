@@ -28,7 +28,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ShowOnSelf"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:ShowOnTeammates"
@@ -44,7 +44,7 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxDistanceOnEnemies"
-            Float: 2000
+            Float: 4000
           }
           Overrides {
             Name: "cs:ShowOnDeadPlayers"
@@ -68,7 +68,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ShowSegments"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:SegmentSize"

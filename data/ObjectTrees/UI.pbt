@@ -26,14 +26,6 @@ Objects {
           String: "Nameplates"
         }
         Overrides {
-          Name: "cs:ShowOnSelf"
-          Bool: false
-        }
-        Overrides {
-          Name: "cs:ShowSegments"
-          Bool: true
-        }
-        Overrides {
           Name: "Position"
           Vector {
           }
@@ -44,12 +36,8 @@ Objects {
           }
         }
         Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
+          Name: "cs:MaxDistanceOnEnemies"
+          Float: 4500
         }
       }
     }
