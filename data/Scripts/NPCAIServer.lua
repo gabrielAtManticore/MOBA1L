@@ -81,7 +81,7 @@ local attackCooldown = 0
 
 
 function SetState(newState)
-	print("NewState = " .. newState)
+	--print("NewState = " .. newState)
 
 	if (newState == STATE_SLEEPING) then
 		ROTATION_ROOT:StopRotate()

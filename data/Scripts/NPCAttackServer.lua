@@ -1,7 +1,7 @@
 --[[
 NPCAttack - Server
 by: standardcombo
-v0.5.1
+v0.5.2
 (work in progress)
 
 Works in conjunction with NPCAIServer. The separation of the two scripts makes it
@@ -87,7 +87,7 @@ function OnProjectileImpact(projectile, other, hitResult)
 	
 	if other:IsA("Player") then
 		SpawnAsset(IMPACT_CHARACTER_VFX, pos, rot)
-		DamagePlayer(other, DAMAGE_TO_PLAYERS)
+		DamagePlayer(other, DAMAGE_TO_PLAYERS, hitResult)
 	else
 		SpawnAsset(IMPACT_SURFACE_VFX, pos, hitResult:GetTransform():GetRotation())
 		DamageNPC(other, DAMAGE_TO_NPCS, pos, rot)
@@ -105,9 +105,14 @@ function SpawnAsset(template, pos, rot)
 end
 
 
-function DamagePlayer(player, amount)
+function DamagePlayer(player, amount, hitResult)
 	local dmg = Damage.New(amount)
+	dmg:SetHitResult(hitResult)
+	dmg.reason = DamageReason.COMBAT
 	player:ApplyDamage(dmg)
+	
+	local sourcePosition = script:GetWorldPosition()
+	Events.BroadcastToPlayer(player, "PlayerDamage_Internal", sourcePosition)
 end
 
 
