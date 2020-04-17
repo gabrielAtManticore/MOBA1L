@@ -6322,3 +6322,438 @@ Objects {
     TemplateId: 11587597462028728477
   }
 }
+Objects {
+  Id: 6220261351719992033
+  Name: "Rings"
+  Transform {
+    Location {
+      Z: -700
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15527568148680445132
+  ChildIds: 16836413988284742686
+  ChildIds: 3746679625694989071
+  ChildIds: 4494061106829813243
+  ChildIds: 8994225797793382391
+  ChildIds: 11776060172814854806
+  ChildIds: 3622946707409078453
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3622946707409078453
+  Name: "Ring - Beveled Thin"
+  Transform {
+    Location {
+      X: -2325
+      Y: -4000
+      Z: 51.4114075
+    }
+    Rotation {
+    }
+    Scale {
+      X: 40
+      Y: 40
+      Z: 0.01
+    }
+  }
+  ParentId: 6220261351719992033
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11444926333527085230
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.952941179
+        G: 1
+        A: 0.003
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12782672116205494175
+    }
+    Teams {
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11776060172814854806
+  Name: "Ring - Beveled Thin"
+  Transform {
+    Location {
+      X: 1050
+      Y: -7900
+      Z: 51.4114075
+    }
+    Rotation {
+    }
+    Scale {
+      X: 40
+      Y: 40
+      Z: 0.01
+    }
+  }
+  ParentId: 6220261351719992033
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11444926333527085230
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.952941179
+        G: 1
+        A: 0.003
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12782672116205494175
+    }
+    Teams {
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8994225797793382391
+  Name: "Ring - Beveled Thin"
+  Transform {
+    Location {
+      X: -107.106445
+      Y: -12536.0654
+      Z: 51.4133
+    }
+    Rotation {
+    }
+    Scale {
+      X: 40
+      Y: 40
+      Z: 0.01
+    }
+  }
+  ParentId: 6220261351719992033
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11444926333527085230
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.952941179
+        G: 1
+        A: 0.003
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12782672116205494175
+    }
+    Teams {
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4494061106829813243
+  Name: "Ring - Beveled Thin"
+  Transform {
+    Location {
+      X: 2225
+      Y: 3975
+      Z: 51.4114075
+    }
+    Rotation {
+    }
+    Scale {
+      X: 40
+      Y: 40
+      Z: 0.01
+    }
+  }
+  ParentId: 6220261351719992033
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11444926333527085230
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        A: 0.004
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12782672116205494175
+    }
+    Teams {
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3746679625694989071
+  Name: "Ring - Beveled Thin"
+  Transform {
+    Location {
+      X: -1150
+      Y: 7775
+      Z: 51.4114075
+    }
+    Rotation {
+    }
+    Scale {
+      X: 40
+      Y: 40
+      Z: 0.01
+    }
+  }
+  ParentId: 6220261351719992033
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11444926333527085230
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        A: 0.004
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12782672116205494175
+    }
+    Teams {
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16836413988284742686
+  Name: "Ring - Beveled Thin"
+  Transform {
+    Location {
+      X: -76.8369141
+      Y: 12418.7861
+      Z: 51.4113464
+    }
+    Rotation {
+    }
+    Scale {
+      X: 40
+      Y: 40
+      Z: 0.01
+    }
+  }
+  ParentId: 6220261351719992033
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11444926333527085230
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        A: 0.004
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12782672116205494175
+    }
+    Teams {
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9003922941424552303
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      X: -107.106445
+      Y: -12536.0654
+      Z: -654.998047
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.32054806
+      Y: 8.32054806
+      Z: 2.1711154
+    }
+  }
+  ParentId: 15527568148680445132
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4476573030261901315
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18153973887378156106
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16826365001921464966
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      X: -76.8369141
+      Y: 12418.7861
+      Z: -655
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.32054806
+      Y: 8.32054806
+      Z: 2.1711154
+    }
+  }
+  ParentId: 15527568148680445132
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4476573030261901315
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18153973887378156106
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}

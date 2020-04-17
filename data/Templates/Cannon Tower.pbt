@@ -69,19 +69,19 @@ Assets {
           }
           Overrides {
             Name: "cs:HearingRadius"
-            Float: 0
+            Float: 400
           }
           Overrides {
             Name: "cs:SearchBonusVision"
-            Float: 5000
+            Float: 500
           }
           Overrides {
             Name: "cs:SearchDuration"
-            Float: 0
+            Float: 1
           }
           Overrides {
             Name: "cs:SearchRadius"
-            Float: 0
+            Float: 2500
           }
           Overrides {
             Name: "cs:ChaseRadius"

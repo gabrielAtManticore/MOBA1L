@@ -81,9 +81,12 @@ local attackCooldown = 0
 
 
 function SetState(newState)
-	--print("NewState = " .. newState)
+	print("NewState = " .. newState)
 
-	if (newState == STATE_ENGAGING) then
+	if (newState == STATE_SLEEPING) then
+		ROTATION_ROOT:StopRotate()
+		
+	elseif (newState == STATE_ENGAGING) then
 		--print("target = " .. tostring(target) .. ", moveSpeed = " .. tostring(MOVE_SPEED) .. ", attackRange = " .. ATTACK_RANGE)
 
 		if (not IsWithinRangeSquared(target, ATTACK_RANGE_SQUARED)) then
@@ -248,6 +251,9 @@ function ResumePatrol()
 		
 	elseif RETURN_TO_SPAWN then
 		SetObjective(SPAWN_POSITION)
+		
+	else
+		SetState(STATE_SLEEPING)
 	end
 end
 
