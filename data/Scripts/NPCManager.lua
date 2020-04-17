@@ -1,7 +1,7 @@
 --[[
 NPCManager
 by: standardcombo
-v0.4.0
+v0.5.0
 (work in progress)
 
 Expects to be a required script. Provides bookkeeping on all NPCs contained in a game.

@@ -1,7 +1,7 @@
 --[[
 DestructibleManager
 by: standardcombo, Chris C.
-v0.4.0
+v0.5.0
 (work in progress)
 
 --]]
@@ -64,10 +64,21 @@ function DamageObject(object, dmg, source, position, rotation)
 
 	if object ~= nil and object:IsA("CoreObject") then
 		local theScript, obj = GetRegisteredObject(object)
-		if theScript ~= nil then
+		if theScript ~= nil and GetObjectTeam(object) ~= GetObjectTeam(source) then
 			theScript.context.ApplyDamage(dmg, source, position, rotation)
 		end
 	end
+end
+
+function GetObjectTeam(object)
+	if object.team ~= nil then
+		return object.team
+	end
+	local templateRoot = object:FindTemplateRoot()
+	if templateRoot then
+		return templateRoot:GetCustomProperty("Team")
+	end
+	return nil
 end
 
 function PrintError(err)

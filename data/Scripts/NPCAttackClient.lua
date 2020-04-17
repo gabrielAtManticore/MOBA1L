@@ -1,7 +1,7 @@
 --[[
 NPCAttack - Client
 by: standardcombo
-v0.4.0
+v0.5.0
 (work in progress)
 
 The client counterpart for NPCAttackServer. Listens for damage and destroy networked events

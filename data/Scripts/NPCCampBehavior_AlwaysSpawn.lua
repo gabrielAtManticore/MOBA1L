@@ -1,7 +1,7 @@
 --[[
 NPCCampBehavior - Always Spawn
 by: standardcombo
-v0.4.0
+v0.5.0
 (work in progress)
 
 Works in conjunction with NPCSpawner and expects it as a sibling script.

@@ -7,4 +7,5 @@ IsPrivate: true
 IsOpenForEdit: true
 Tags: "Action"
 Tags: "Strategy"
-ScreenshotPaths: "C:\\Users\\gbsus\\Documents\\My Games\\CORE\\Saved\\Maps\\CORE Single Lane MOBA\\Screenshots\\Screenshot0001.png"
+ScreenshotPaths: "C:\\Users\\gbsus\\Documents\\My Games\\CORE\\Saved\\Maps\\CORE MOBA\\MOBA1L\\data\\Screenshots\\Screenshot0001.png"
+ReleaseNotes: "Lots of improvements"

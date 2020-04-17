@@ -1,7 +1,7 @@
 --[[
 NPCAttack - Server
 by: standardcombo
-v0.4.0
+v0.5.1
 (work in progress)
 
 Works in conjunction with NPCAIServer. The separation of the two scripts makes it
@@ -38,9 +38,15 @@ function GetTeam()
 end
 
 function GetObjectTeam(object)
-	return object.team
+	if object.team ~= nil then
+		return object.team
+	end
+	local templateRoot = object:FindTemplateRoot()
+	if templateRoot then
+		return templateRoot:GetCustomProperty("Team")
+	end
+	return nil
 end
-
 
 function Attack(target)
 	local startPos = script:GetWorldPosition()
@@ -172,7 +178,8 @@ function ApplyDamage(dmg, source, position, rotation)
 		-- Events
 		
 		Events.Broadcast("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation, source)
-		BROADCAST("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
+		--BROADCAST("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
+		Events.BroadcastToAllPlayers("ObjectDamaged", id, prevHealth, amount, impactPosition, impactRotation)
 
 		if (newHealth <= 0) then
 			Events.Broadcast("ObjectDestroyed", id)

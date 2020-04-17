@@ -1,6 +1,6 @@
 Assets {
-  Id: 2837579121194794601
-  Name: "Destructible Rifle"
+  Id: 15067675817394292545
+  Name: "MOBA Rifle"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -69,11 +69,10 @@ Assets {
             BeamAssetRef {
               Id: 841534158063459245
             }
-            BurstCount: 30
+            BurstCount: 3
             BurstDuration: 7
-            BurstStopsWithRelease: true
             AttackCooldown: 0.25
-            Range: 10000
+            Range: 2000
             ImpactPlayerAssetRef {
               Id: 307406115803496087
             }
@@ -98,7 +97,7 @@ Assets {
             ReloadAbility {
               SubObjectId: 1799359350468873868
             }
-            Damage: 10
+            Damage: 5
           }
         }
       }

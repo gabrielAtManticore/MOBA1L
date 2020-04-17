@@ -1,7 +1,7 @@
 --[[
 NPCAI - Server
 by: standardcombo
-v0.4.0
+v0.5.0
 (work in progress)
 
 Logical state machine for an enemy NPC. Works in conjunction with NPCAttackServer.

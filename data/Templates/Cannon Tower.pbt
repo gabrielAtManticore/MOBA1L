@@ -35,7 +35,7 @@ Assets {
           }
           Overrides {
             Name: "cs:CurrentHealth"
-            Float: 2000
+            Float: 1000
           }
           Overrides {
             Name: "cs:DestructibleManager"
@@ -65,23 +65,23 @@ Assets {
           }
           Overrides {
             Name: "cs:VisionRadius"
-            Float: 2100
+            Float: 2000
           }
           Overrides {
             Name: "cs:HearingRadius"
-            Float: 400
+            Float: 0
           }
           Overrides {
             Name: "cs:SearchBonusVision"
-            Float: 500
+            Float: 5000
           }
           Overrides {
             Name: "cs:SearchDuration"
-            Float: 3
+            Float: 0
           }
           Overrides {
             Name: "cs:SearchRadius"
-            Float: 2500
+            Float: 0
           }
           Overrides {
             Name: "cs:ChaseRadius"
@@ -269,11 +269,11 @@ Assets {
           }
           Overrides {
             Name: "cs:DamageToPlayers"
-            Int: 20
+            Int: 10
           }
           Overrides {
             Name: "cs:DamageToNPCs"
-            Float: 45
+            Float: 50
           }
           Overrides {
             Name: "cs:PlayerHomingTarget"
