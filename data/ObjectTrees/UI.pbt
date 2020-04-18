@@ -97,7 +97,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3837241179993358033
+  Id: 10281005684492879195
   Name: "Damage Feedback"
   Transform {
     Location {
@@ -111,6 +111,85 @@ Objects {
     }
   }
   ParentId: 5591476264464451530
+  ChildIds: 14692083208713050367
+  ChildIds: 10584601005930352599
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DamageTextDuration"
+      Float: 1
+    }
+    Overrides {
+      Name: "cs:DamageTextColor"
+      Color {
+        R: 0.85
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:ShowFlyUpText"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:DisplayBigText"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:ShowHitFeedback"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:HitFeedbackSound"
+      ObjectReference {
+        SelfId: 6059493505757369204
+      }
+    }
+    Overrides {
+      Name: "cs:DamageTextDuration:tooltip"
+      String: "Duration of the damage fly up text."
+    }
+    Overrides {
+      Name: "cs:DamageTextColor:tooltip"
+      String: "Fly up damage text color."
+    }
+    Overrides {
+      Name: "cs:DisplayBigText:tooltip"
+      String: "If true, the fly up damage text will appear bigger."
+    }
+    Overrides {
+      Name: "cs:ShowHitFeedback:tooltip"
+      String: "Show the hit indicator when the local player hits an enemy player."
+    }
+    Overrides {
+      Name: "cs:HitFeedbackSound:tooltip"
+      String: "A sound played when the local player hits an enemy player. Tick \"Disable Spatial\" to make it work with local player."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10584601005930352599
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10281005684492879195
+  ChildIds: 4483492150101363405
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -119,40 +198,76 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5020465629018774494
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Damage Feedback"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "cs:ShowFlyUpText"
-          Bool: false
-        }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 4483492150101363405
+  Name: "DamageFeedbackClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10584601005930352599
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 10281005684492879195
       }
     }
-    TemplateAsset {
-      Id: 12984678018063706940
+    Overrides {
+      Name: "cs:HitIndicator"
+      ObjectReference {
+        SelfId: 14688437168643804930
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1723234306837824973
+    }
+  }
+}
+Objects {
+  Id: 14692083208713050367
+  Name: "DamageFeedbackServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10281005684492879195
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10075954645707622603
     }
   }
 }

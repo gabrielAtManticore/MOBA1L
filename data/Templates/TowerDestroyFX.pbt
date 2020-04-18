@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 8665615554796574365
         ChildIds: 1257687204259017332
         ChildIds: 5098318857132307035
         UnregisteredParameters {
@@ -29,6 +30,41 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 8665615554796574365
+        Name: "Basic Explosion VFX"
+        Transform {
+          Location {
+            Z: 125
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2.25
+            Y: 2.25
+            Z: 2.25
+          }
+        }
+        ParentId: 7016241108170310621
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17069761961690292468
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+            TeamSettings {
+            }
+          }
         }
       }
       Objects {
@@ -86,9 +122,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 8
-            Y: 8
-            Z: 8
+            X: 16.4999981
+            Y: 16.4999981
+            Z: 16.4999981
           }
         }
         ParentId: 7016241108170310621
@@ -120,6 +156,15 @@ Assets {
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 17069761961690292468
+      Name: "Basic Explosion VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_explosion"
       }
     }
     Assets {

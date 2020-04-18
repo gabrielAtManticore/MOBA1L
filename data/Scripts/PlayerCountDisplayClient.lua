@@ -18,9 +18,10 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 -- Internal custom properties
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local ALIVE_COUNT_TEXT = script:GetCustomProperty("AliveCountText"):WaitForObject()
-local KILL_COUNT_TEXT = script:GetCustomProperty("KillCountText"):WaitForObject()
+local TOTAL_COUNT_TEXT = script:GetCustomProperty("TotalCountText"):WaitForObject()
 
-local LOCAL_PLAYER = Game.GetLocalPlayer()
+-- User exposed properties
+local SHOW_TOTAL_PLAYERS = COMPONENT_ROOT:GetCustomProperty("ShowTotalPlayers")
 
 -- int, int GetPlayerCounts()
 -- Get number of alive and total players
@@ -32,14 +33,19 @@ function GetPlayerCounts()
             aliveCount = aliveCount + 1
         end
     end
-    return aliveCount
+    return aliveCount, #players
 end
 
 -- nil Tick(delta)
 -- Update the UI
 function Tick()
-    local alivePlayerCount = GetPlayerCounts()
+    local alivePlayerCount, totalPlayerCount = GetPlayerCounts()
 
     ALIVE_COUNT_TEXT.text = tostring(alivePlayerCount)
-    KILL_COUNT_TEXT.text = tostring(LOCAL_PLAYER.kills)
+    TOTAL_COUNT_TEXT.text = tostring(totalPlayerCount)
+end
+
+-- Initialize
+if not SHOW_TOTAL_PLAYERS then
+    TOTAL_COUNT_TEXT.visibility = Visibility.FORCE_OFF
 end
