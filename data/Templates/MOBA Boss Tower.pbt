@@ -812,6 +812,7 @@ Assets {
           }
         }
         ParentId: 9594020249652174971
+        ChildIds: 347239023744301619
         ChildIds: 11385797514352806591
         ChildIds: 7574660585347487347
         ChildIds: 15787647995885911960
@@ -826,6 +827,44 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 347239023744301619
+        Name: "NPCHealthBarDataProviderClient"
+        Transform {
+          Location {
+            X: 0.324570149
+            Y: 1.24665022
+            Z: 350
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.75
+            Y: 0.75
+            Z: 0.75
+          }
+        }
+        ParentId: 8659995298806411610
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Root"
+            ObjectReference {
+              SubObjectId: 9594020249652174971
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 7537607417112377092
+          }
         }
       }
       Objects {

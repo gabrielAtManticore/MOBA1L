@@ -21,6 +21,8 @@ local PATROLLING_ART = script:GetCustomProperty("Patrolling"):WaitForObject()
 local DEAD_ART = script:GetCustomProperty("Dead"):WaitForObject()
 local FORWARD_NODE = script:GetCustomProperty("ForwardNode"):WaitForObject()
 
+local MAX_HEALTH = ROOT:GetCustomProperty("CurrentHealth")
+
 local STATE_SLEEPING = 0
 local STATE_ENGAGING = 1
 local STATE_ATTACK_CAST = 2

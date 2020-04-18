@@ -638,7 +638,7 @@ Objects {
     Overrides {
       Name: "cs:DevMinion"
       AssetReference {
-        Id: 17972925722164906837
+        Id: 4812371249315312696
       }
     }
   }
@@ -859,7 +859,7 @@ Objects {
     Overrides {
       Name: "cs:DevMinion"
       AssetReference {
-        Id: 17972925722164906837
+        Id: 4812371249315312696
       }
     }
   }
@@ -1080,7 +1080,7 @@ Objects {
     Overrides {
       Name: "cs:DevMinion"
       AssetReference {
-        Id: 17972925722164906837
+        Id: 4812371249315312696
       }
     }
   }
@@ -1301,7 +1301,7 @@ Objects {
     Overrides {
       Name: "cs:DevMinion"
       AssetReference {
-        Id: 17972925722164906837
+        Id: 4812371249315312696
       }
     }
   }

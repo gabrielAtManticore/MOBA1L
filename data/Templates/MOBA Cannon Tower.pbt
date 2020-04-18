@@ -7,7 +7,7 @@ Assets {
       RootId: 4286002597013953579
       Objects {
         Id: 4286002597013953579
-        Name: "Cannon Tower"
+        Name: "MOBA Cannon Tower"
         Transform {
           Scale {
             X: 1
@@ -812,6 +812,7 @@ Assets {
           }
         }
         ParentId: 4286002597013953579
+        ChildIds: 11594602970297219675
         ChildIds: 2331863113213789802
         ChildIds: 497636887112994449
         ChildIds: 7068506052854159819
@@ -826,6 +827,44 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 11594602970297219675
+        Name: "NPCHealthBarDataProviderClient"
+        Transform {
+          Location {
+            X: 0.324570149
+            Y: 1.24665022
+            Z: 350
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.75
+            Y: 0.75
+            Z: 0.75
+          }
+        }
+        ParentId: 17892577004084564792
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Root"
+            ObjectReference {
+              SubObjectId: 4286002597013953579
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 7537607417112377092
+          }
         }
       }
       Objects {

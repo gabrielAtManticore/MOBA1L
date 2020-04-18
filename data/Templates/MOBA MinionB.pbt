@@ -7,7 +7,7 @@ Assets {
       RootId: 12967867852267520266
       Objects {
         Id: 12967867852267520266
-        Name: "MinionB"
+        Name: "MOBA MinionB"
         Transform {
           Scale {
             X: 1
@@ -592,6 +592,7 @@ Assets {
           }
         }
         ParentId: 7436977061991459555
+        ChildIds: 2078354734705710151
         ChildIds: 16783018995991628606
         ChildIds: 1808420325362926985
         ChildIds: 17465210408781147764
@@ -604,6 +605,42 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 2078354734705710151
+        Name: "NPCHealthBarDataProviderClient"
+        Transform {
+          Location {
+            Z: 200
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9253220844595929359
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Root"
+            ObjectReference {
+              SubObjectId: 12967867852267520266
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 7537607417112377092
+          }
         }
       }
       Objects {
