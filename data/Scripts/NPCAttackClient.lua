@@ -13,6 +13,29 @@ local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local DAMAGE_FX = script:GetCustomProperty("DamageFX")
 local DESTROY_FX = script:GetCustomProperty("DestroyFX")
 
+local STATE_SLEEPING = 0
+local STATE_ENGAGING = 1
+local STATE_ATTACK_CAST = 2
+local STATE_ATTACK_RECOVERY = 3
+local STATE_PATROLLING = 4
+local STATE_LOOKING_AROUND = 5
+local STATE_DEAD_1 = 6
+local STATE_DEAD_2 = 7
+local STATE_DISABLED = 8
+
+
+function OnPropertyChanged(object, propertyName)
+	
+	if (propertyName == "CurrentState") then
+		local state = ROOT:GetCustomProperty("CurrentState")
+		
+		if (state == STATE_DEAD_1) then
+			SpawnAsset(DESTROY_FX, script:GetWorldPosition(), script:GetWorldRotation())
+		end
+	end
+end
+ROOT.networkedPropertyChangedEvent:Connect(OnPropertyChanged)
+
 
 function GetID()
 	if Object.IsValid(ROOT) then
@@ -30,9 +53,9 @@ end
 
 function OnObjectDestroyed(id)
 	-- Ignore other NPCs, make sure this event is for us
-	if id == GetID() then
-		SpawnAsset(DESTROY_FX, script:GetWorldPosition(), script:GetWorldRotation())
-	end
+	--if id == GetID() then
+		--SpawnAsset(DESTROY_FX, script:GetWorldPosition(), script:GetWorldRotation())
+	--end
 end
 
 local damagedListener = Events.Connect("ObjectDamaged", OnObjectDamaged)
