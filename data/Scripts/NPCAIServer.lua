@@ -1,7 +1,7 @@
 --[[
 NPCAI - Server
 by: standardcombo
-v0.5.0
+v0.5.1
 (work in progress)
 
 Logical state machine for an enemy NPC. Works in conjunction with NPCAttackServer.
@@ -28,7 +28,7 @@ local VISION_RADIUS = ROOT:GetCustomProperty("VisionRadius") or 2500
 local HEARING_RADIUS = ROOT:GetCustomProperty("HearingRadius") or 1000
 local SEARCH_BONUS_VISION = ROOT:GetCustomProperty("SearchBonusVision") or 5000
 local SEARCH_DURATION = ROOT:GetCustomProperty("SearchDuration") or 6
-local SEARCH_RADIUS = ROOT:GetCustomProperty("SearchRadius") or 600
+local POSSIBILITY_RADIUS = ROOT:GetCustomProperty("PossibilityRadius") or 600
 local CHASE_RADIUS = ROOT:GetCustomProperty("ChaseRadius") or 3500
 local ATTACK_RANGE = ROOT:GetCustomProperty("AttackRange") or 1500
 local ATTACK_CAST_TIME = ROOT:GetCustomProperty("AttackCast") or 0.5
@@ -522,7 +522,7 @@ function DoLookAround()
 		t = searchTimeElapsed / SEARCH_DURATION
 	end
 	local searchPos = Vector3.Lerp(searchStartPosition, searchEndPosition, t)
-	local area = math.ceil(SEARCH_RADIUS / searchPrecision)
+	local area = math.ceil(POSSIBILITY_RADIUS / searchPrecision)
 	searchPos.x = searchPos.x + math.random(-area, area)
 	searchPos.y = searchPos.y + math.random(-area, area)
 	

@@ -81,7 +81,7 @@ Assets {
             Float: 6
           }
           Overrides {
-            Name: "cs:SearchRadius"
+            Name: "cs:PossibilityRadius"
             Float: 800
           }
           Overrides {
